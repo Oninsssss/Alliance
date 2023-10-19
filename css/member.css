@@ -1,0 +1,338 @@
+
+
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#04151f;
+border-right:1px solid #e5e5e5;
+position:fixed;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+transition:width .50s linear;
+transition:width .15s linear;
+transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#efd6ac;
+font-size: 15px;
+text-decoration:none;
+transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#04151f;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+
+#member h1{
+  margin-top: 100px;
+  font-family: 'Rowdies', cursive;
+  font-size: 80px;
+  color: white;
+}
+
+#member h1 b{
+  color: #efd6ac;
+}
+
+#member h4{
+  color: rgb(99, 99, 99);
+}
+
+#memberBtn{
+  margin:0;
+  margin-top: 30px;
+  background-color: #ffe060;
+  border:none;
+  font-weight: bolder;
+  padding: 20px;
+  border-radius: 30px;
+
+}
+
+#heading{
+  text-align: center;
+}
+
+#stickyBox {
+  width:60%;
+  height: 150px;
+  margin-top: 50px;
+  background-color: #04151f;
+  border-radius: 50px;
+  border: 3px solid #efd6ac;
+  
+}
+
+#stickyBox h2{
+  margin: 0;
+  color:white;
+  margin-top: -70px;
+  text-align: center;
+}
+
+#stickyBox h2 b{
+  margin: 0;
+  color:#ffe060;
+}
+
+#box1{
+  margin: 0;
+  padding: 10px;
+  height: 550px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box2{
+  margin: 0;
+  padding: 10px;
+  height: 550px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#box3{
+  margin: 0;
+  padding: 10px;
+  height: 550px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row{
+  margin: 10px;
+  margin-top:100px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#innerBox1{
+  margin: 50px;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  background-color: #459395;
+  border-radius: 20px;
+}
+
+#innerBox2{
+  margin: 50px;
+  margin-top: 100px;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  background-color: #eb7c69;
+  border-radius: 20px;
+}
+
+#innerBox3{
+  margin: 50px;
+  margin-top: 200px;
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  background-color: #fda638;
+  border-radius: 20px;
+}
+
+#cash{
+  margin-top: -150px;
+  width: 100%;
+}
+
+#gameTime{
+  margin-top: -120px;
+  width: 100%;
+}
+
+#steps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px white solid;
+  height: auto;
+  border-radius: 30px;
+  margin-top: 150px;
+  padding: 50px;
+}
+
+#step1Icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 30px;
+}
+
+#step1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+  font-size: 20px;
+  color:#ffe060;
+}
+
+#coachBenefitBtn{
+  padding: 30px;
+  width: 75%;
+  height: 100px;
+  border: none;
+  border-radius: 20px;
+  margin-top: 40px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+footer{
+  margin: 0;
+  padding: 10px;
+  height: 300px;
+  background-color: #04151f;
+  margin-top: 100px;
+}
+
+footer h5{
+  color: white;
+  font-weight: bolder;
+  font-family: 'Rowdies', cursive;
+  font-size: 50px;
+  margin-top: -100px;
+}
+
+footer p{
+  color:rgb(148, 148, 148);
+  margin:0;
+}
+
+footer button{
+  border:none;
+  background-color: #ffe060;
+  padding: 7px;
+  width: 30%;
+  border-radius: 20px;
+}
+
+footer h6{
+  font-weight: bolder;
+  color:white;
+}
+
+footer hr{
+  margin:0;
+  color:white;
+}
+
+#copyright{
+  color:white;
+  margin:0;
+  font-size:11px;
+}
+
+#series{
+  color:white;
+  margin:0;
+}

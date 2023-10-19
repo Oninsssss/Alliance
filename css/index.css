@@ -1,0 +1,408 @@
+#gameRow .card {
+    margin: 0;
+    padding: 20px;
+    height: 280px;
+    transition: 0.3s;
+    width: 200px;
+    border-radius: 5px;
+    top: -300px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#coachesRow .card2 {
+    margin: 0;
+    height: 255px;
+    transition: 0.3s;
+    width: 400px;
+    border-radius: 5px;
+    top: -300px;
+    background-color: #04151f;
+    color: #efd6ac;
+}
+#coachPic{
+    margin: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+#membershipBanner{
+    height: 100%;
+    margin-top: -180px;
+    border-radius: 30px;
+}
+
+.gradient-border {
+    --borderWidth: 3px;
+    background: black;
+    position: relative;
+    border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    border-radius: calc(10 * var(--borderWidth));
+    z-index: -1;
+    animation: animatedgradient 3s ease alternate infinite;
+    background-size: 300% 300%;
+  }
+  
+  
+  @keyframes animatedgradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+
+#claimYourMmbrshp{
+    font-size: 50px;
+    position: relative;
+    color:#efd6ac;
+    margin-top: -20px;
+    font-family: 'Rowdies', cursive;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+        #236192 0%,
+        #387F97 20%,
+        #789F90 40%,
+        #DDA46F 60%,
+        #DE754C 80%,
+        #B33D26 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 7s linear infinite;
+    display: inline-block;
+}
+
+#mmbrBtn{
+    border: none;
+    outline: 0;
+    background-color: #ffe060;
+    padding: 10px;
+    width: 180px;
+    border-radius: 30px;
+    margin-top:10px;
+}
+
+#cancelBtn:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+#cancelBtn{
+    color: rgb(101, 101, 101);
+    cursor: pointer;
+}
+
+footer{
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    background-color: #04151f;
+    margin-top: 100px;
+}
+
+footer h5{
+    color: white;
+    font-weight: bolder;
+    font-family: 'Rowdies', cursive;
+    font-size: 50px;
+}
+
+footer p{
+    color:rgb(148, 148, 148);
+    margin:0;
+}
+
+footer button{
+    border:none;
+    background-color: #ffe060;
+    padding: 7px;
+    width: 30%;
+    border-radius: 20px;
+}
+
+footer h6{
+    font-weight: bolder;
+    color:white;
+}
+
+footer hr{
+    margin:0;
+    margin-top: 70px;
+    color:white;
+}
+
+#copyright{
+    color:white;
+    margin:0;
+    font-size:11px;
+}
+
+#series{
+    color:white;
+    margin:0;
+}
+
+
+:root {
+    --card-height: 300px;
+    --card-width: calc(var(--card-height) / 1.5);
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+  .card {
+    width: var(--card-width);
+    height: var(--card-height);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0 0px;
+    background-color: transparent;
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+  
+  .wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  .card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .wrapper::before,
+  .wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 10px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  .wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  .wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  .card:hover .wrapper::before,
+  .wrapper::after {
+    opacity: 1;
+  }
+  
+  .card:hover .wrapper::after {
+    height: 120px;
+  }
+  .title {
+    width: 100%;
+    transition: transform 0.5s;
+    filter: drop-shadow(0px 3px 2px #222);
+    
+  }
+  .card:hover .title {
+    transform: translate3d(0%, 50px, 100px);
+  }
+  
+  .character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -10%, 100px);
+  }
+  
+
+
+#teamSlider {
+    background: white;
+    height: 250px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 1140px;
+}
+
+#teamSlider::before, #teamSlider::after {
+    background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+
+#teamSlider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+}
+
+#teamSlider::before {
+    left: 0;
+    top: 0;
+}
+
+#teamSlider .slide-track {
+    animation: scroll 80s linear infinite;
+    display: flex;
+    width: calc(250px * 18);
+
+}
+
+#teamSlider .slide-track:hover {
+    animation-play-state: paused;
+}
+
+#teamSlider .slide {
+    height: 250px;
+    width: 250px;
+}
+
+
+.slide:nth-child(1), .slide:nth-child(12) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(2), .slide:nth-child(13) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(3), .slide:nth-child(14) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(4), .slide:nth-child(15) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(5), .slide:nth-child(16) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(6), .slide:nth-child(17) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(7), .slide:nth-child(18) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(8), .slide:nth-child(19) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(9), .slide:nth-child(20) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(10), .slide:nth-child(21) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+.slide:nth-child(11), .slide:nth-child(22) {
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    background-color:black;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 6.5));
+    }
+}
